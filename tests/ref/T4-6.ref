@@ -1,0 +1,111 @@
+-------------------------------------
+|user_id|age|sex|occupation   |zone |
+-------------------------------------
+|1      |24 |M  |technician   |85711|
+|4      |24 |M  |technician   |43537|
+|7      |57 |M  |administrator|91344|
+|8      |36 |M  |administrator|05201|
+|34     |38 |F  |administrator|42141|
+|42     |30 |M  |administrator|17870|
+|44     |26 |M  |technician   |46260|
+|48     |45 |M  |administrator|12550|
+|62     |27 |F  |administrator|97214|
+|72     |48 |F  |administrator|73034|
+|77     |30 |M  |technician   |29379|
+|78     |26 |M  |administrator|61801|
+|79     |39 |F  |administrator|03755|
+|80     |34 |F  |administrator|52241|
+|86     |26 |M  |administrator|46005|
+|87     |47 |M  |administrator|89503|
+|89     |43 |F  |administrator|68106|
+|95     |31 |M  |administrator|10707|
+|118    |21 |M  |administrator|90210|
+|131    |59 |F  |administrator|15237|
+|143    |42 |M  |technician   |08832|
+|151    |38 |F  |administrator|48103|
+|163    |49 |M  |administrator|97212|
+|174    |30 |F  |administrator|52302|
+|180    |22 |F  |administrator|60202|
+|190    |30 |M  |administrator|95938|
+|191    |33 |M  |administrator|95161|
+|194    |38 |M  |administrator|02154|
+|197    |55 |M  |technician   |75094|
+|218    |37 |M  |administrator|06513|
+|225    |51 |F  |administrator|58202|
+|237    |49 |M  |administrator|63146|
+|238    |42 |F  |administrator|44124|
+|244    |28 |M  |technician   |80525|
+|261    |28 |M  |administrator|85202|
+|266    |62 |F  |administrator|78756|
+|277    |35 |F  |administrator|55406|
+|282    |22 |M  |administrator|20057|
+|294    |34 |M  |technician   |92110|
+|296    |43 |F  |administrator|16803|
+|311    |32 |M  |technician   |73071|
+|317    |22 |M  |administrator|13210|
+|325    |48 |M  |technician   |02139|
+|326    |41 |M  |administrator|15235|
+|328    |51 |M  |administrator|06779|
+|383    |42 |M  |administrator|75204|
+|394    |25 |M  |administrator|96819|
+|400    |33 |F  |administrator|78213|
+|409    |48 |M  |administrator|98225|
+|436    |30 |F  |administrator|17345|
+|438    |51 |F  |administrator|43204|
+|439    |23 |F  |administrator|20817|
+|441    |50 |M  |technician   |55013|
+|447    |30 |M  |administrator|55113|
+|452    |35 |M  |administrator|28018|
+|455    |48 |M  |administrator|83709|
+|456    |24 |M  |technician   |31820|
+|458    |47 |M  |technician   |Y1A6B|
+|488    |48 |M  |technician   |21012|
+|494    |38 |F  |administrator|49428|
+|500    |28 |M  |administrator|94305|
+|509    |23 |M  |administrator|10011|
+|513    |43 |M  |administrator|26241|
+|523    |50 |F  |administrator|04102|
+|525    |27 |F  |administrator|19711|
+|529    |47 |F  |administrator|44224|
+|539    |53 |F  |administrator|80303|
+|545    |27 |M  |technician   |08052|
+|562    |54 |F  |administrator|20879|
+|578    |31 |M  |administrator|M7A1A|
+|665    |25 |M  |administrator|55412|
+|666    |44 |M  |administrator|61820|
+|670    |30 |M  |technician   |21114|
+|672    |54 |F  |administrator|90095|
+|688    |37 |F  |administrator|60476|
+|715    |21 |M  |technician   |91206|
+|716    |36 |F  |administrator|44265|
+|717    |24 |M  |technician   |84105|
+|718    |42 |M  |technician   |64118|
+|720    |49 |F  |administrator|16506|
+|726    |25 |F  |administrator|80538|
+|738    |35 |M  |technician   |95403|
+|739    |35 |M  |technician   |73162|
+|748    |28 |M  |administrator|94720|
+|750    |28 |M  |administrator|32303|
+|762    |32 |M  |administrator|95050|
+|768    |29 |M  |administrator|12866|
+|784    |47 |M  |administrator|91040|
+|788    |51 |M  |administrator|05779|
+|790    |27 |M  |technician   |80913|
+|799    |49 |F  |administrator|19716|
+|802    |35 |M  |administrator|34105|
+|803    |70 |M  |administrator|78212|
+|812    |22 |M  |technician   |76234|
+|819    |59 |M  |administrator|40205|
+|832    |24 |M  |technician   |77042|
+|850    |34 |M  |technician   |78390|
+|852    |46 |M  |administrator|94086|
+|857    |35 |F  |administrator|V1G4L|
+|873    |48 |F  |administrator|33763|
+|879    |33 |F  |administrator|55337|
+|889    |24 |M  |technician   |78704|
+|891    |51 |F  |administrator|03062|
+|922    |29 |F  |administrator|21114|
+|938    |38 |F  |technician   |55038|
+|940    |32 |M  |administrator|02215|
+-------------------------------------
+

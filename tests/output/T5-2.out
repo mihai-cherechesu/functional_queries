@@ -1,0 +1,53 @@
+-------------------------------------
+|user_id|age|sex|occupation   |zone |
+-------------------------------------
+|30     |7  |M  |student      |55436|
+|57     |16 |M  |none         |84010|
+|67     |17 |M  |student      |60402|
+|101    |15 |M  |student      |05146|
+|142    |13 |M  |other        |48118|
+|179    |15 |M  |entertainment|20755|
+|206    |14 |F  |student      |53115|
+|257    |17 |M  |student      |77005|
+|281    |15 |F  |student      |06059|
+|289    |11 |M  |none         |94619|
+|341    |17 |F  |student      |44405|
+|367    |17 |M  |student      |37411|
+|375    |17 |M  |entertainment|37777|
+|397    |17 |M  |student      |27514|
+|434    |16 |F  |student      |49705|
+|451    |16 |M  |student      |48446|
+|461    |15 |M  |student      |98102|
+|471    |10 |M  |student      |77459|
+|550    |16 |F  |student      |95453|
+|580    |16 |M  |student      |17961|
+|582    |17 |M  |student      |93003|
+|609    |13 |F  |student      |55106|
+|618    |15 |F  |student      |44212|
+|619    |17 |M  |student      |44134|
+|621    |17 |M  |student      |60402|
+|628    |13 |M  |none         |94306|
+|646    |17 |F  |student      |51250|
+|674    |13 |F  |student      |55337|
+|700    |17 |M  |student      |76309|
+|761    |17 |M  |student      |97302|
+|813    |14 |F  |student      |02136|
+|849    |15 |F  |student      |25652|
+|863    |17 |M  |student      |60089|
+|880    |13 |M  |student      |83702|
+|887    |14 |F  |student      |27249|
+|904    |17 |F  |student      |61073|
+|211    |66 |M  |salesman     |32605|
+|318    |65 |M  |retired      |06518|
+|349    |68 |M  |retired      |61455|
+|481    |73 |M  |retired      |37771|
+|559    |69 |M  |executive    |10022|
+|564    |65 |M  |retired      |94591|
+|573    |68 |M  |retired      |48911|
+|585    |69 |M  |librarian    |98501|
+|651    |65 |M  |retired      |02903|
+|767    |70 |M  |engineer     |00000|
+|803    |70 |M  |administrator|78212|
+|860    |70 |F  |retired      |48322|
+-------------------------------------
+

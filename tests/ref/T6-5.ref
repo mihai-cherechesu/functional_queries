@@ -1,0 +1,405 @@
+---------------------
+|occupation   |zone |
+---------------------
+|technician   |85711|
+|writer       |32067|
+|technician   |43537|
+|administrator|05201|
+|student      |01002|
+|entertainment|10309|
+|programmer   |06355|
+|writer       |30068|
+|writer       |40206|
+|engineer     |55107|
+|writer       |55369|
+|artist       |10003|
+|student      |27510|
+|student      |55105|
+|scientist    |27514|
+|engineer     |80525|
+|administrator|17870|
+|technician   |46260|
+|programmer   |50233|
+|writer       |52245|
+|educator     |16509|
+|programmer   |55414|
+|executive    |66315|
+|programmer   |01331|
+|librarian    |46260|
+|programmer   |52246|
+|engineer     |30040|
+|marketing    |75240|
+|educator     |43202|
+|student      |80521|
+|engineer     |55337|
+|engineer     |60067|
+|scientist    |98034|
+|student      |41850|
+|scientist    |T8H1N|
+|entertainment|08816|
+|technician   |29379|
+|administrator|61801|
+|student      |21218|
+|executive    |55369|
+|administrator|46005|
+|entertainment|80525|
+|student      |71457|
+|administrator|10707|
+|executive    |90254|
+|programmer   |30220|
+|student      |55108|
+|student      |55108|
+|engineer     |94043|
+|scientist    |60466|
+|other        |55423|
+|salesman     |60613|
+|programmer   |75013|
+|engineer     |17110|
+|administrator|90210|
+|programmer   |67401|
+|student      |60615|
+|lawyer       |22202|
+|none         |73439|
+|other        |94612|
+|programmer   |80236|
+|student      |38401|
+|entertainment|V3N4P|
+|engineer     |97006|
+|student      |60641|
+|student      |53703|
+|educator     |08360|
+|programmer   |66215|
+|artist       |15610|
+|other        |L9G2B|
+|scientist    |07030|
+|other        |49512|
+|executive    |21218|
+|programmer   |33884|
+|scientist    |27708|
+|librarian    |76013|
+|educator     |16801|
+|artist       |95014|
+|administrator|95938|
+|administrator|95161|
+|student      |49931|
+|administrator|02154|
+|writer       |17604|
+|writer       |E2A4H|
+|marketing    |92037|
+|engineer     |03060|
+|executive    |55345|
+|programmer   |63033|
+|engineer     |02215|
+|other        |11727|
+|administrator|06513|
+|programmer   |43212|
+|librarian    |78205|
+|programmer   |27502|
+|student      |92103|
+|engineer     |98682|
+|educator     |22973|
+|artist       |95628|
+|educator     |31404|
+|educator     |60201|
+|technician   |80525|
+|student      |55109|
+|engineer     |20770|
+|student      |37235|
+|student      |84103|
+|executive    |95110|
+|doctor       |85032|
+|entertainment|07029|
+|student      |48823|
+|administrator|85202|
+|executive    |84601|
+|engineer     |83716|
+|engineer     |19422|
+|scientist    |53706|
+|engineer     |92064|
+|student      |95064|
+|programmer   |85251|
+|administrator|20057|
+|programmer   |55305|
+|programmer   |53713|
+|student      |15217|
+|salesman     |31211|
+|marketing    |23226|
+|writer       |60804|
+|technician   |92110|
+|educator     |50325|
+|doctor       |63108|
+|student      |55439|
+|programmer   |94086|
+|student      |55454|
+|educator     |91711|
+|technician   |73071|
+|educator     |18301|
+|administrator|13210|
+|programmer   |22030|
+|student      |19149|
+|student      |11101|
+|entertainment|91344|
+|librarian    |30002|
+|salesman     |42101|
+|scientist    |10522|
+|lawyer       |37901|
+|other        |76059|
+|student      |97301|
+|scientist    |28480|
+|student      |60135|
+|executive    |98133|
+|student      |61801|
+|student      |44074|
+|lawyer       |20009|
+|student      |91335|
+|engineer     |99206|
+|executive    |78746|
+|student      |18015|
+|student      |02859|
+|engineer     |55117|
+|artist       |94608|
+|writer       |10003|
+|salesman     |43221|
+|entertainment|37412|
+|other        |36106|
+|student      |84604|
+|administrator|96819|
+|other        |92374|
+|engineer     |95129|
+|other        |06811|
+|engineer     |03261|
+|student      |61755|
+|educator     |44691|
+|educator     |15222|
+|programmer   |38115|
+|educator     |85711|
+|lawyer       |43215|
+|entertainment|94533|
+|student      |55414|
+|student      |29205|
+|scientist    |98199|
+|marketing    |92629|
+|entertainment|50311|
+|artist       |11211|
+|engineer     |60007|
+|other        |48076|
+|student      |85282|
+|salesman     |33308|
+|writer       |92653|
+|administrator|55113|
+|entertainment|10021|
+|librarian    |55021|
+|administrator|28018|
+|technician   |31820|
+|student      |29201|
+|other        |05001|
+|student      |90804|
+|engineer     |91201|
+|engineer     |02341|
+|programmer   |10021|
+|student      |87544|
+|student      |94708|
+|programmer   |75230|
+|student      |60440|
+|other        |10019|
+|educator     |55409|
+|scientist    |43212|
+|student      |21208|
+|educator     |93101|
+|engineer     |92121|
+|engineer     |60090|
+|engineer     |03052|
+|writer       |55408|
+|administrator|94305|
+|student      |10025|
+|student      |23092|
+|marketing    |19382|
+|administrator|10011|
+|other        |98038|
+|student      |21250|
+|other        |20090|
+|programmer   |20707|
+|student      |55454|
+|other        |55320|
+|engineer     |55443|
+|marketing    |97124|
+|librarian    |12180|
+|engineer     |94040|
+|engineer     |30078|
+|engineer     |22902|
+|scientist    |21010|
+|engineer     |91201|
+|student      |60515|
+|scientist    |95123|
+|technician   |08052|
+|executive    |22911|
+|programmer   |55414|
+|scientist    |62901|
+|student      |10003|
+|engineer     |60005|
+|entertainment|10003|
+|educator     |01915|
+|educator     |91903|
+|educator     |14627|
+|artist       |01945|
+|marketing    |46032|
+|administrator|M7A1A|
+|educator     |48103|
+|other        |94131|
+|student      |27511|
+|other        |14216|
+|lawyer       |90034|
+|programmer   |31909|
+|other        |84116|
+|programmer   |02320|
+|programmer   |47905|
+|educator     |11787|
+|engineer     |33716|
+|programmer   |63044|
+|other        |10003|
+|student      |21227|
+|educator     |79070|
+|educator     |27705|
+|programmer   |14850|
+|programmer   |20723|
+|scientist    |19807|
+|engineer     |08034|
+|programmer   |55414|
+|engineer     |T8H1N|
+|other        |23237|
+|other        |74101|
+|student      |60626|
+|scientist    |55122|
+|programmer   |53211|
+|other        |22911|
+|executive    |55105|
+|programmer   |92626|
+|educator     |54248|
+|student      |77380|
+|programmer   |98121|
+|other        |19341|
+|engineer     |94115|
+|administrator|55412|
+|librarian    |01970|
+|other        |20009|
+|technician   |21114|
+|programmer   |91919|
+|other        |28814|
+|programmer   |32712|
+|lawyer       |90405|
+|programmer   |55128|
+|student      |55414|
+|educator     |26506|
+|other        |45439|
+|salesman     |63304|
+|educator     |60089|
+|engineer     |18053|
+|writer       |38115|
+|other        |77042|
+|other        |89104|
+|educator     |49512|
+|student      |55454|
+|other        |N4T1A|
+|engineer     |55343|
+|technician   |91206|
+|technician   |84105|
+|executive    |94403|
+|executive    |40243|
+|student      |91711|
+|student      |78741|
+|programmer   |98072|
+|technician   |95403|
+|technician   |73162|
+|writer       |63108|
+|student      |29210|
+|programmer   |92660|
+|marketing    |47024|
+|engineer     |19047|
+|administrator|94720|
+|other        |80919|
+|administrator|32303|
+|student      |55104|
+|student      |53706|
+|administrator|95050|
+|scientist    |02113|
+|student      |33066|
+|administrator|12866|
+|executive    |06927|
+|student      |14216|
+|student      |15232|
+|student      |80027|
+|librarian    |51157|
+|student      |01960|
+|student      |K7L5J|
+|marketing    |77081|
+|engineer     |23322|
+|other        |55420|
+|technician   |80913|
+|educator     |20064|
+|student      |85281|
+|educator     |57197|
+|programmer   |08610|
+|programmer   |55337|
+|writer       |92154|
+|administrator|34105|
+|educator     |61820|
+|marketing    |11217|
+|technician   |76234|
+|other        |12345|
+|other        |28806|
+|other        |20755|
+|librarian    |27514|
+|student      |37725|
+|engineer     |77845|
+|artist       |50322|
+|other        |15017|
+|artist       |77048|
+|librarian    |85282|
+|other        |33765|
+|technician   |77042|
+|writer       |90019|
+|other        |64153|
+|student      |01375|
+|artist       |55406|
+|librarian    |44212|
+|engineer     |95662|
+|lawyer       |47130|
+|student      |55417|
+|technician   |78390|
+|executive    |13820|
+|programmer   |63021|
+|artist       |11231|
+|scientist    |92507|
+|programmer   |55303|
+|student      |10025|
+|student      |65203|
+|executive    |44648|
+|scientist    |37076|
+|other        |77504|
+|marketing    |43017|
+|engineer     |40503|
+|technician   |78704|
+|student      |97301|
+|other        |45243|
+|student      |95823|
+|writer       |91505|
+|other        |33484|
+|homemaker    |61755|
+|other        |55116|
+|executive    |L1V3W|
+|educator     |20850|
+|other        |30350|
+|healthcare   |29301|
+|student      |76201|
+|engineer     |N2L5N|
+|other        |14216|
+|student      |E2E3R|
+|other        |11753|
+|programmer   |55428|
+|student      |55408|
+|student      |48105|
+|other        |32789|
+|administrator|02215|
+|student      |77841|
+---------------------
+

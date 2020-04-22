@@ -1,0 +1,655 @@
+-------------------------------------
+|user_id|age|sex|occupation   |zone |
+-------------------------------------
+|1      |24 |M  |technician   |85711|
+|3      |23 |M  |writer       |32067|
+|4      |24 |M  |technician   |43537|
+|5      |33 |F  |other        |15213|
+|8      |36 |M  |administrator|05201|
+|9      |29 |M  |student      |01002|
+|11     |39 |F  |other        |30329|
+|12     |28 |F  |other        |06405|
+|16     |21 |M  |entertainment|10309|
+|17     |30 |M  |programmer   |06355|
+|18     |35 |F  |other        |37212|
+|21     |26 |M  |writer       |30068|
+|22     |25 |M  |writer       |40206|
+|23     |30 |F  |artist       |48197|
+|24     |21 |F  |artist       |94533|
+|25     |39 |M  |engineer     |55107|
+|28     |32 |M  |writer       |55369|
+|30     |7  |M  |student      |55436|
+|31     |24 |M  |artist       |10003|
+|32     |28 |F  |student      |78741|
+|33     |23 |M  |student      |27510|
+|34     |38 |F  |administrator|42141|
+|35     |20 |F  |homemaker    |42459|
+|36     |19 |F  |student      |93117|
+|37     |23 |M  |student      |55105|
+|38     |28 |F  |other        |54467|
+|40     |38 |M  |scientist    |27514|
+|41     |33 |M  |engineer     |80525|
+|42     |30 |M  |administrator|17870|
+|43     |29 |F  |librarian    |20854|
+|44     |26 |M  |technician   |46260|
+|45     |29 |M  |programmer   |50233|
+|46     |27 |F  |marketing    |46538|
+|49     |23 |F  |student      |76111|
+|50     |21 |M  |writer       |52245|
+|51     |28 |M  |educator     |16509|
+|52     |18 |F  |student      |55105|
+|53     |26 |M  |programmer   |55414|
+|54     |22 |M  |executive    |66315|
+|55     |37 |M  |programmer   |01331|
+|56     |25 |M  |librarian    |46260|
+|57     |16 |M  |none         |84010|
+|58     |27 |M  |programmer   |52246|
+|61     |36 |M  |engineer     |30040|
+|62     |27 |F  |administrator|97214|
+|63     |31 |M  |marketing    |75240|
+|64     |32 |M  |educator     |43202|
+|66     |23 |M  |student      |80521|
+|67     |17 |M  |student      |60402|
+|68     |19 |M  |student      |22904|
+|69     |24 |M  |engineer     |55337|
+|70     |27 |M  |engineer     |60067|
+|71     |39 |M  |scientist    |98034|
+|73     |24 |M  |student      |41850|
+|74     |39 |M  |scientist    |T8H1N|
+|75     |24 |M  |entertainment|08816|
+|76     |20 |M  |student      |02215|
+|77     |30 |M  |technician   |29379|
+|78     |26 |M  |administrator|61801|
+|79     |39 |F  |administrator|03755|
+|80     |34 |F  |administrator|52241|
+|81     |21 |M  |student      |21218|
+|84     |32 |M  |executive    |55369|
+|86     |26 |M  |administrator|46005|
+|92     |32 |M  |entertainment|80525|
+|94     |26 |M  |student      |71457|
+|95     |31 |M  |administrator|10707|
+|96     |25 |F  |artist       |75206|
+|99     |20 |M  |student      |63129|
+|100    |36 |M  |executive    |90254|
+|101    |15 |M  |student      |05146|
+|102    |38 |M  |programmer   |30220|
+|103    |26 |M  |student      |55108|
+|104    |27 |M  |student      |55108|
+|105    |24 |M  |engineer     |94043|
+|107    |39 |M  |scientist    |60466|
+|109    |29 |M  |other        |55423|
+|110    |19 |M  |student      |77840|
+|112    |30 |M  |salesman     |60613|
+|114    |27 |M  |programmer   |75013|
+|115    |31 |M  |engineer     |17110|
+|117    |20 |M  |student      |16125|
+|118    |21 |M  |administrator|90210|
+|119    |32 |M  |programmer   |67401|
+|122    |32 |F  |writer       |22206|
+|124    |34 |M  |student      |60615|
+|125    |30 |M  |lawyer       |22202|
+|126    |28 |F  |lawyer       |20015|
+|127    |33 |M  |none         |73439|
+|128    |24 |F  |marketing    |20009|
+|129    |36 |F  |marketing    |07039|
+|130    |20 |M  |none         |60115|
+|132    |24 |M  |other        |94612|
+|134    |31 |M  |programmer   |80236|
+|135    |23 |M  |student      |38401|
+|139    |20 |M  |student      |08904|
+|140    |30 |F  |student      |32250|
+|142    |13 |M  |other        |48118|
+|145    |31 |M  |entertainment|V3N4P|
+|148    |33 |M  |engineer     |97006|
+|149    |35 |F  |marketing    |17325|
+|150    |20 |F  |artist       |02139|
+|151    |38 |F  |administrator|48103|
+|152    |33 |F  |educator     |68767|
+|153    |25 |M  |student      |60641|
+|154    |25 |M  |student      |53703|
+|155    |32 |F  |other        |11217|
+|156    |25 |M  |educator     |08360|
+|159    |23 |F  |student      |55346|
+|160    |27 |M  |programmer   |66215|
+|162    |25 |M  |artist       |15610|
+|165    |20 |F  |other        |53715|
+|167    |37 |M  |other        |L9G2B|
+|174    |30 |F  |administrator|52302|
+|175    |26 |F  |scientist    |21911|
+|176    |28 |M  |scientist    |07030|
+|177    |20 |M  |programmer   |19104|
+|178    |26 |M  |other        |49512|
+|179    |15 |M  |entertainment|20755|
+|180    |22 |F  |administrator|60202|
+|181    |26 |M  |executive    |21218|
+|182    |36 |M  |programmer   |33884|
+|183    |33 |M  |scientist    |27708|
+|184    |37 |M  |librarian    |76013|
+|186    |39 |F  |executive    |00000|
+|187    |26 |M  |educator     |16801|
+|189    |32 |M  |artist       |95014|
+|190    |30 |M  |administrator|95938|
+|191    |33 |M  |administrator|95161|
+|193    |29 |M  |student      |49931|
+|194    |38 |M  |administrator|02154|
+|198    |21 |F  |student      |55414|
+|199    |30 |M  |writer       |17604|
+|201    |27 |M  |writer       |E2A4H|
+|203    |25 |F  |student      |32301|
+|206    |14 |F  |student      |53115|
+|207    |39 |M  |marketing    |92037|
+|209    |33 |F  |educator     |85710|
+|210    |39 |M  |engineer     |03060|
+|213    |33 |M  |executive    |55345|
+|214    |26 |F  |librarian    |11231|
+|215    |35 |M  |programmer   |63033|
+|216    |22 |M  |engineer     |02215|
+|217    |22 |M  |other        |11727|
+|218    |37 |M  |administrator|06513|
+|219    |32 |M  |programmer   |43212|
+|220    |30 |M  |librarian    |78205|
+|221    |19 |M  |student      |20685|
+|222    |29 |M  |programmer   |27502|
+|223    |19 |F  |student      |47906|
+|224    |31 |F  |educator     |43512|
+|226    |28 |M  |student      |92103|
+|228    |21 |F  |student      |22003|
+|229    |29 |F  |librarian    |22903|
+|230    |28 |F  |student      |14476|
+|233    |38 |M  |engineer     |98682|
+|235    |37 |M  |educator     |22973|
+|239    |39 |M  |artist       |95628|
+|240    |23 |F  |educator     |20784|
+|241    |26 |F  |student      |20001|
+|242    |33 |M  |educator     |31404|
+|243    |33 |M  |educator     |60201|
+|244    |28 |M  |technician   |80525|
+|245    |22 |M  |student      |55109|
+|246    |19 |M  |student      |28734|
+|247    |28 |M  |engineer     |20770|
+|248    |25 |M  |student      |37235|
+|249    |25 |M  |student      |84103|
+|250    |29 |M  |executive    |95110|
+|251    |28 |M  |doctor       |85032|
+|253    |26 |F  |librarian    |22903|
+|255    |23 |M  |entertainment|07029|
+|256    |35 |F  |none         |39042|
+|257    |17 |M  |student      |77005|
+|258    |19 |F  |student      |77801|
+|259    |21 |M  |student      |48823|
+|261    |28 |M  |administrator|85202|
+|262    |19 |F  |student      |78264|
+|264    |36 |F  |writer       |90064|
+|265    |26 |M  |executive    |84601|
+|267    |23 |M  |engineer     |83716|
+|268    |24 |M  |engineer     |19422|
+|269    |31 |F  |librarian    |43201|
+|270    |18 |F  |student      |63119|
+|272    |33 |M  |scientist    |53706|
+|274    |20 |F  |student      |55414|
+|275    |38 |M  |engineer     |92064|
+|276    |21 |M  |student      |95064|
+|277    |35 |F  |administrator|55406|
+|278    |37 |F  |librarian    |30033|
+|279    |33 |M  |programmer   |85251|
+|280    |30 |F  |librarian    |22903|
+|281    |15 |F  |student      |06059|
+|282    |22 |M  |administrator|20057|
+|283    |28 |M  |programmer   |55305|
+|285    |25 |M  |programmer   |53713|
+|286    |27 |M  |student      |15217|
+|287    |21 |M  |salesman     |31211|
+|288    |34 |M  |marketing    |23226|
+|289    |11 |M  |none         |94619|
+|291    |19 |M  |student      |44106|
+|292    |35 |F  |programmer   |94703|
+|293    |24 |M  |writer       |60804|
+|294    |34 |M  |technician   |92110|
+|295    |31 |M  |educator     |50325|
+|297    |29 |F  |educator     |98103|
+|299    |29 |M  |doctor       |63108|
+|300    |26 |F  |programmer   |55106|
+|301    |24 |M  |student      |55439|
+|303    |19 |M  |student      |14853|
+|304    |22 |F  |student      |71701|
+|305    |23 |M  |programmer   |94086|
+|307    |25 |M  |student      |55454|
+|310    |37 |M  |educator     |91711|
+|311    |32 |M  |technician   |73071|
+|314    |20 |F  |student      |08043|
+|315    |31 |M  |educator     |18301|
+|317    |22 |M  |administrator|13210|
+|319    |38 |M  |programmer   |22030|
+|320    |19 |M  |student      |24060|
+|322    |20 |M  |student      |50613|
+|323    |21 |M  |student      |19149|
+|324    |21 |F  |student      |02176|
+|327    |22 |M  |student      |11101|
+|330    |35 |F  |educator     |33884|
+|331    |33 |M  |entertainment|91344|
+|332    |20 |M  |student      |40504|
+|334    |32 |M  |librarian    |30002|
+|336    |23 |M  |salesman     |42101|
+|337    |37 |M  |scientist    |10522|
+|338    |39 |F  |librarian    |59717|
+|339    |35 |M  |lawyer       |37901|
+|341    |17 |F  |student      |44405|
+|342    |25 |F  |other        |98006|
+|344    |30 |F  |librarian    |94117|
+|345    |28 |F  |librarian    |94143|
+|346    |34 |M  |other        |76059|
+|347    |18 |M  |student      |90210|
+|348    |24 |F  |student      |45660|
+|350    |32 |M  |student      |97301|
+|352    |37 |F  |programmer   |55105|
+|353    |25 |M  |scientist    |28480|
+|354    |29 |F  |librarian    |48197|
+|355    |25 |M  |student      |60135|
+|356    |32 |F  |homemaker    |92688|
+|357    |26 |M  |executive    |98133|
+|359    |22 |M  |student      |61801|
+|361    |22 |M  |student      |44074|
+|362    |35 |F  |homemaker    |85233|
+|363    |20 |M  |student      |87501|
+|365    |29 |M  |lawyer       |20009|
+|366    |20 |F  |student      |50670|
+|367    |17 |M  |student      |37411|
+|368    |18 |M  |student      |92113|
+|369    |24 |M  |student      |91335|
+|371    |36 |M  |engineer     |99206|
+|372    |25 |F  |student      |66046|
+|373    |24 |F  |other        |55116|
+|374    |36 |M  |executive    |78746|
+|375    |17 |M  |entertainment|37777|
+|376    |28 |F  |other        |10010|
+|377    |22 |M  |student      |18015|
+|378    |35 |M  |student      |02859|
+|380    |32 |M  |engineer     |55117|
+|381    |33 |M  |artist       |94608|
+|385    |36 |M  |writer       |10003|
+|386    |36 |M  |salesman     |43221|
+|387    |33 |M  |entertainment|37412|
+|388    |31 |M  |other        |36106|
+|391    |23 |M  |student      |84604|
+|393    |19 |M  |student      |83686|
+|394    |25 |M  |administrator|96819|
+|397    |17 |M  |student      |27514|
+|399    |25 |M  |other        |92374|
+|400    |33 |F  |administrator|78213|
+|402    |30 |M  |engineer     |95129|
+|403    |37 |M  |other        |06811|
+|404    |29 |F  |programmer   |55108|
+|405    |22 |F  |healthcare   |10019|
+|407    |29 |M  |engineer     |03261|
+|408    |23 |M  |student      |61755|
+|410    |30 |F  |artist       |94025|
+|411    |34 |M  |educator     |44691|
+|412    |25 |M  |educator     |15222|
+|414    |24 |M  |programmer   |38115|
+|415    |39 |M  |educator     |85711|
+|416    |20 |F  |student      |92626|
+|417    |27 |F  |other        |48103|
+|419    |37 |M  |lawyer       |43215|
+|421    |38 |F  |programmer   |55105|
+|422    |26 |M  |entertainment|94533|
+|424    |36 |F  |marketing    |55422|
+|425    |19 |M  |student      |58644|
+|428    |28 |M  |student      |55414|
+|429    |27 |M  |student      |29205|
+|430    |38 |M  |scientist    |98199|
+|431    |24 |M  |marketing    |92629|
+|432    |22 |M  |entertainment|50311|
+|433    |27 |M  |artist       |11211|
+|434    |16 |F  |student      |49705|
+|435    |24 |M  |engineer     |60007|
+|436    |30 |F  |administrator|17345|
+|437    |27 |F  |other        |20009|
+|439    |23 |F  |administrator|20817|
+|440    |30 |M  |other        |48076|
+|442    |22 |M  |student      |85282|
+|443    |35 |M  |salesman     |33308|
+|445    |21 |M  |writer       |92653|
+|447    |30 |M  |administrator|55113|
+|448    |23 |M  |entertainment|10021|
+|449    |23 |M  |librarian    |55021|
+|450    |35 |F  |educator     |11758|
+|451    |16 |M  |student      |48446|
+|452    |35 |M  |administrator|28018|
+|453    |18 |M  |student      |06333|
+|456    |24 |M  |technician   |31820|
+|457    |33 |F  |salesman     |30011|
+|459    |22 |M  |student      |29201|
+|461    |15 |M  |student      |98102|
+|462    |19 |F  |student      |02918|
+|465    |32 |M  |other        |05001|
+|466    |22 |M  |student      |90804|
+|467    |29 |M  |engineer     |91201|
+|468    |28 |M  |engineer     |02341|
+|470    |24 |M  |programmer   |10021|
+|471    |10 |M  |student      |77459|
+|472    |24 |M  |student      |87544|
+|473    |29 |M  |student      |94708|
+|475    |30 |M  |programmer   |75230|
+|476    |28 |M  |student      |60440|
+|477    |23 |F  |student      |02125|
+|478    |29 |M  |other        |10019|
+|479    |30 |M  |educator     |55409|
+|482    |18 |F  |student      |40256|
+|483    |29 |M  |scientist    |43212|
+|484    |27 |M  |student      |21208|
+|486    |39 |M  |educator     |93101|
+|487    |22 |M  |engineer     |92121|
+|490    |29 |F  |artist       |V5A2B|
+|493    |22 |M  |engineer     |60090|
+|494    |38 |F  |administrator|49428|
+|495    |29 |M  |engineer     |03052|
+|496    |21 |F  |student      |55414|
+|497    |20 |M  |student      |50112|
+|498    |26 |M  |writer       |55408|
+|500    |28 |M  |administrator|94305|
+|501    |22 |M  |student      |10025|
+|502    |22 |M  |student      |23092|
+|505    |27 |F  |other        |20657|
+|507    |18 |F  |writer       |28450|
+|508    |27 |M  |marketing    |19382|
+|509    |23 |M  |administrator|10011|
+|510    |34 |M  |other        |98038|
+|511    |22 |M  |student      |21250|
+|512    |29 |M  |other        |20090|
+|514    |27 |M  |programmer   |20707|
+|517    |24 |M  |student      |55454|
+|519    |22 |M  |other        |55320|
+|521    |19 |M  |student      |02146|
+|522    |36 |M  |engineer     |55443|
+|525    |27 |F  |administrator|19711|
+|526    |30 |M  |marketing    |97124|
+|527    |33 |M  |librarian    |12180|
+|528    |18 |M  |student      |55104|
+|530    |29 |M  |engineer     |94040|
+|531    |30 |F  |salesman     |97408|
+|532    |20 |M  |student      |92705|
+|534    |20 |M  |student      |05464|
+|536    |38 |M  |engineer     |30078|
+|537    |36 |M  |engineer     |22902|
+|538    |31 |M  |scientist    |21010|
+|540    |28 |M  |engineer     |91201|
+|541    |19 |F  |student      |84302|
+|542    |21 |M  |student      |60515|
+|543    |33 |M  |scientist    |95123|
+|545    |27 |M  |technician   |08052|
+|546    |36 |M  |executive    |22911|
+|550    |16 |F  |student      |95453|
+|551    |25 |M  |programmer   |55414|
+|554    |32 |M  |scientist    |62901|
+|555    |29 |F  |educator     |23227|
+|556    |35 |F  |educator     |30606|
+|557    |30 |F  |writer       |11217|
+|560    |32 |M  |student      |10003|
+|561    |23 |M  |engineer     |60005|
+|563    |39 |F  |librarian    |32707|
+|566    |20 |M  |student      |14627|
+|567    |24 |M  |entertainment|10003|
+|568    |39 |M  |educator     |01915|
+|569    |34 |M  |educator     |91903|
+|570    |26 |M  |educator     |14627|
+|571    |34 |M  |artist       |01945|
+|575    |33 |M  |marketing    |46032|
+|577    |36 |F  |student      |77845|
+|578    |31 |M  |administrator|M7A1A|
+|579    |32 |M  |educator     |48103|
+|580    |16 |M  |student      |17961|
+|581    |37 |M  |other        |94131|
+|582    |17 |M  |student      |93003|
+|584    |25 |M  |student      |27511|
+|586    |20 |M  |student      |79508|
+|587    |26 |M  |other        |14216|
+|588    |18 |F  |student      |93063|
+|589    |21 |M  |lawyer       |90034|
+|592    |18 |M  |student      |97520|
+|593    |31 |F  |educator     |68767|
+|595    |25 |M  |programmer   |31909|
+|596    |20 |M  |artist       |77073|
+|597    |23 |M  |other        |84116|
+|599    |22 |F  |student      |R3T5K|
+|600    |34 |M  |programmer   |02320|
+|601    |19 |F  |artist       |99687|
+|603    |21 |M  |programmer   |47905|
+|604    |39 |M  |educator     |11787|
+|605    |33 |M  |engineer     |33716|
+|606    |28 |M  |programmer   |63044|
+|608    |22 |M  |other        |10003|
+|609    |13 |F  |student      |55106|
+|610    |22 |M  |student      |21227|
+|612    |36 |M  |educator     |79070|
+|613    |37 |F  |marketing    |29678|
+|615    |38 |M  |educator     |27705|
+|617    |27 |F  |writer       |11201|
+|618    |15 |F  |student      |44212|
+|619    |17 |M  |student      |44134|
+|620    |18 |F  |writer       |81648|
+|621    |17 |M  |student      |60402|
+|622    |25 |M  |programmer   |14850|
+|624    |19 |M  |student      |30067|
+|625    |27 |M  |programmer   |20723|
+|626    |23 |M  |scientist    |19807|
+|627    |24 |M  |engineer     |08034|
+|628    |13 |M  |none         |94306|
+|630    |26 |F  |healthcare   |55408|
+|631    |18 |F  |student      |38866|
+|632    |18 |M  |student      |55454|
+|633    |35 |M  |programmer   |55414|
+|634    |39 |M  |engineer     |T8H1N|
+|635    |22 |M  |other        |23237|
+|637    |30 |M  |other        |74101|
+|640    |20 |M  |student      |61801|
+|641    |24 |M  |student      |60626|
+|642    |18 |F  |student      |95521|
+|643    |39 |M  |scientist    |55122|
+|645    |27 |M  |programmer   |53211|
+|646    |17 |F  |student      |51250|
+|649    |20 |M  |student      |39762|
+|652    |35 |M  |other        |22911|
+|653    |31 |M  |executive    |55105|
+|654    |27 |F  |student      |78739|
+|657    |26 |F  |none         |78704|
+|658    |33 |M  |programmer   |92626|
+|659    |31 |M  |educator     |54248|
+|660    |26 |M  |student      |77380|
+|661    |28 |M  |programmer   |98121|
+|663    |26 |M  |other        |19341|
+|664    |30 |M  |engineer     |94115|
+|665    |25 |M  |administrator|55412|
+|667    |35 |M  |librarian    |01970|
+|668    |29 |F  |writer       |10016|
+|669    |37 |M  |other        |20009|
+|670    |30 |M  |technician   |21114|
+|671    |21 |M  |programmer   |91919|
+|674    |13 |F  |student      |55337|
+|675    |34 |M  |other        |28814|
+|676    |30 |M  |programmer   |32712|
+|677    |20 |M  |other        |99835|
+|679    |20 |F  |student      |54302|
+|680    |33 |M  |lawyer       |90405|
+|682    |23 |M  |programmer   |55128|
+|684    |28 |M  |student      |55414|
+|685    |32 |F  |librarian    |55409|
+|686    |32 |M  |educator     |26506|
+|687    |31 |F  |healthcare   |27713|
+|688    |37 |F  |administrator|60476|
+|689    |25 |M  |other        |45439|
+|690    |35 |M  |salesman     |63304|
+|691    |34 |M  |educator     |60089|
+|692    |34 |M  |engineer     |18053|
+|695    |26 |M  |writer       |38115|
+|697    |25 |M  |other        |77042|
+|698    |28 |F  |programmer   |06906|
+|700    |17 |M  |student      |76309|
+|702    |37 |M  |other        |89104|
+|703    |26 |M  |educator     |49512|
+|705    |21 |F  |student      |54494|
+|706    |23 |M  |student      |55454|
+|708    |26 |F  |homemaker    |96349|
+|709    |21 |M  |other        |N4T1A|
+|710    |19 |M  |student      |92020|
+|711    |22 |F  |student      |15203|
+|712    |22 |F  |student      |54901|
+|714    |26 |M  |engineer     |55343|
+|715    |21 |M  |technician   |91206|
+|716    |36 |F  |administrator|44265|
+|717    |24 |M  |technician   |84105|
+|719    |37 |F  |other        |V0R2H|
+|721    |24 |F  |entertainment|11238|
+|723    |26 |M  |executive    |94403|
+|724    |31 |M  |executive    |40243|
+|725    |21 |M  |student      |91711|
+|726    |25 |F  |administrator|80538|
+|727    |25 |M  |student      |78741|
+|729    |19 |M  |student      |56567|
+|730    |31 |F  |scientist    |32114|
+|732    |28 |F  |other        |98405|
+|734    |25 |F  |other        |63108|
+|735    |29 |F  |healthcare   |85719|
+|737    |30 |M  |programmer   |98072|
+|738    |35 |M  |technician   |95403|
+|739    |35 |M  |technician   |73162|
+|740    |25 |F  |educator     |22206|
+|741    |25 |M  |writer       |63108|
+|742    |35 |M  |student      |29210|
+|743    |31 |M  |programmer   |92660|
+|744    |35 |M  |marketing    |47024|
+|746    |25 |M  |engineer     |19047|
+|747    |19 |M  |other        |93612|
+|748    |28 |M  |administrator|94720|
+|749    |33 |M  |other        |80919|
+|750    |28 |M  |administrator|32303|
+|751    |24 |F  |other        |90034|
+|756    |30 |F  |none         |90247|
+|757    |26 |M  |student      |55104|
+|758    |27 |M  |student      |53706|
+|759    |20 |F  |student      |68503|
+|760    |35 |F  |other        |14211|
+|761    |17 |M  |student      |97302|
+|762    |32 |M  |administrator|95050|
+|763    |27 |M  |scientist    |02113|
+|764    |27 |F  |educator     |62903|
+|765    |31 |M  |student      |33066|
+|768    |29 |M  |administrator|12866|
+|769    |39 |M  |executive    |06927|
+|770    |28 |M  |student      |14216|
+|771    |26 |M  |student      |15232|
+|773    |20 |M  |student      |55414|
+|774    |30 |M  |student      |80027|
+|776    |30 |M  |librarian    |51157|
+|778    |34 |M  |student      |01960|
+|779    |31 |M  |student      |K7L5J|
+|781    |20 |M  |student      |48825|
+|782    |21 |F  |artist       |33205|
+|783    |30 |M  |marketing    |77081|
+|785    |32 |M  |engineer     |23322|
+|786    |36 |F  |engineer     |01754|
+|787    |18 |F  |student      |98620|
+|789    |29 |M  |other        |55420|
+|790    |27 |M  |technician   |80913|
+|791    |31 |M  |educator     |20064|
+|793    |22 |M  |student      |85281|
+|794    |32 |M  |educator     |57197|
+|795    |30 |M  |programmer   |08610|
+|796    |32 |F  |writer       |33755|
+|800    |25 |M  |programmer   |55337|
+|801    |22 |M  |writer       |92154|
+|802    |35 |M  |administrator|34105|
+|804    |39 |M  |educator     |61820|
+|805    |27 |F  |other        |20009|
+|806    |27 |M  |marketing    |11217|
+|812    |22 |M  |technician   |76234|
+|813    |14 |F  |student      |02136|
+|814    |30 |M  |other        |12345|
+|815    |32 |M  |other        |28806|
+|816    |34 |M  |other        |20755|
+|817    |19 |M  |student      |60152|
+|818    |28 |M  |librarian    |27514|
+|820    |22 |M  |student      |37725|
+|821    |37 |M  |engineer     |77845|
+|822    |29 |F  |librarian    |53144|
+|823    |27 |M  |artist       |50322|
+|824    |31 |M  |other        |15017|
+|826    |28 |M  |artist       |77048|
+|827    |23 |F  |engineer     |80228|
+|828    |28 |M  |librarian    |85282|
+|831    |21 |M  |other        |33765|
+|832    |24 |M  |technician   |77042|
+|833    |34 |M  |writer       |90019|
+|834    |26 |M  |other        |64153|
+|837    |36 |F  |artist       |55409|
+|838    |23 |M  |student      |01375|
+|839    |38 |F  |entertainment|90814|
+|840    |39 |M  |artist       |55406|
+|843    |35 |M  |librarian    |44212|
+|844    |22 |M  |engineer     |95662|
+|846    |27 |M  |lawyer       |47130|
+|847    |29 |M  |student      |55417|
+|849    |15 |F  |student      |25652|
+|850    |34 |M  |technician   |78390|
+|851    |18 |M  |other        |29646|
+|854    |29 |F  |student      |55408|
+|857    |35 |F  |administrator|V1G4L|
+|859    |18 |F  |other        |06492|
+|861    |38 |F  |student      |14085|
+|862    |25 |M  |executive    |13820|
+|863    |17 |M  |student      |60089|
+|864    |27 |M  |programmer   |63021|
+|865    |25 |M  |artist       |11231|
+|867    |24 |M  |scientist    |92507|
+|868    |21 |M  |programmer   |55303|
+|869    |30 |M  |student      |10025|
+|870    |22 |M  |student      |65203|
+|871    |31 |M  |executive    |44648|
+|872    |19 |F  |student      |74078|
+|874    |36 |M  |scientist    |37076|
+|875    |24 |F  |student      |35802|
+|877    |30 |M  |other        |77504|
+|879    |33 |F  |administrator|55337|
+|880    |13 |M  |student      |83702|
+|881    |39 |M  |marketing    |43017|
+|882    |35 |M  |engineer     |40503|
+|885    |30 |F  |other        |95316|
+|886    |20 |M  |student      |61820|
+|887    |14 |F  |student      |27249|
+|889    |24 |M  |technician   |78704|
+|890    |32 |M  |student      |97301|
+|892    |36 |M  |other        |45243|
+|893    |25 |M  |student      |95823|
+|895    |31 |F  |librarian    |32301|
+|896    |28 |M  |writer       |91505|
+|897    |30 |M  |other        |33484|
+|898    |23 |M  |homemaker    |61755|
+|899    |32 |M  |other        |55116|
+|901    |38 |M  |executive    |L1V3W|
+|903    |28 |M  |educator     |20850|
+|904    |17 |F  |student      |61073|
+|905    |27 |M  |other        |30350|
+|907    |25 |F  |other        |80526|
+|910    |28 |M  |healthcare   |29301|
+|911    |37 |F  |writer       |53210|
+|913    |27 |M  |student      |76201|
+|916    |27 |M  |engineer     |N2L5N|
+|917    |22 |F  |student      |20006|
+|919    |25 |M  |other        |14216|
+|920    |30 |F  |artist       |90008|
+|921    |20 |F  |student      |98801|
+|922    |29 |F  |administrator|21114|
+|923    |21 |M  |student      |E2E3R|
+|924    |29 |M  |other        |11753|
+|925    |18 |F  |salesman     |49036|
+|927    |23 |M  |programmer   |55428|
+|928    |21 |M  |student      |55408|
+|930    |28 |F  |scientist    |07310|
+|933    |28 |M  |student      |48105|
+|936    |24 |M  |other        |32789|
+|938    |38 |F  |technician   |55038|
+|939    |26 |F  |student      |33319|
+|940    |32 |M  |administrator|02215|
+|941    |20 |M  |student      |97229|
+|943    |22 |M  |student      |77841|
+-------------------------------------
+

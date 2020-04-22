@@ -1,0 +1,188 @@
+-------------------------------------
+|user_id|age|sex|occupation   |zone |
+-------------------------------------
+|3      |23 |M  |writer       |32067|
+|6      |42 |M  |executive    |98101|
+|21     |26 |M  |writer       |30068|
+|22     |25 |M  |writer       |40206|
+|28     |32 |M  |writer       |55369|
+|50     |21 |M  |writer       |52245|
+|54     |22 |M  |executive    |66315|
+|84     |32 |M  |executive    |55369|
+|93     |48 |M  |executive    |23112|
+|98     |49 |F  |executive    |90291|
+|100    |36 |M  |executive    |90254|
+|113    |47 |M  |executive    |95032|
+|122    |32 |F  |writer       |22206|
+|181    |26 |M  |executive    |21218|
+|186    |39 |F  |executive    |00000|
+|196    |49 |M  |writer       |55105|
+|199    |30 |M  |writer       |17604|
+|201    |27 |M  |writer       |E2A4H|
+|213    |33 |M  |executive    |55345|
+|227    |46 |M  |executive    |60659|
+|236    |44 |F  |writer       |53214|
+|250    |29 |M  |executive    |95110|
+|264    |36 |F  |writer       |90064|
+|265    |26 |M  |executive    |84601|
+|284    |40 |M  |executive    |92629|
+|293    |24 |M  |writer       |60804|
+|298    |44 |M  |executive    |01581|
+|335    |45 |M  |executive    |33775|
+|357    |26 |M  |executive    |98133|
+|370    |52 |M  |writer       |08534|
+|374    |36 |M  |executive    |78746|
+|385    |36 |M  |writer       |10003|
+|389    |44 |F  |writer       |83702|
+|390    |42 |F  |writer       |85016|
+|392    |52 |M  |writer       |59801|
+|445    |21 |M  |writer       |92653|
+|464    |60 |M  |writer       |94583|
+|474    |51 |M  |executive    |93711|
+|491    |43 |F  |writer       |53711|
+|498    |26 |M  |writer       |55408|
+|503    |50 |F  |writer       |27514|
+|504    |40 |F  |writer       |92115|
+|507    |18 |F  |writer       |28450|
+|518    |49 |F  |writer       |99709|
+|546    |36 |M  |executive    |22911|
+|548    |51 |M  |writer       |95468|
+|557    |30 |F  |writer       |11217|
+|558    |56 |F  |writer       |63132|
+|559    |69 |M  |executive    |10022|
+|576    |48 |M  |executive    |98281|
+|617    |27 |F  |writer       |11201|
+|620    |18 |F  |writer       |81648|
+|653    |31 |M  |executive    |55105|
+|668    |29 |F  |writer       |10016|
+|695    |26 |M  |writer       |38115|
+|723    |26 |M  |executive    |94403|
+|724    |31 |M  |executive    |40243|
+|728    |58 |M  |executive    |94306|
+|736    |48 |F  |writer       |94618|
+|741    |25 |M  |writer       |63108|
+|745    |42 |M  |writer       |55113|
+|769    |39 |M  |executive    |06927|
+|772    |50 |M  |writer       |27105|
+|775    |46 |M  |executive    |90036|
+|796    |32 |F  |writer       |33755|
+|798    |40 |F  |writer       |64131|
+|801    |22 |M  |writer       |92154|
+|829    |48 |M  |writer       |80209|
+|833    |34 |M  |writer       |90019|
+|835    |44 |F  |executive    |11577|
+|842    |40 |M  |writer       |93055|
+|853    |49 |M  |writer       |40515|
+|862    |25 |M  |executive    |13820|
+|871    |31 |M  |executive    |44648|
+|896    |28 |M  |writer       |91505|
+|901    |38 |M  |executive    |L1V3W|
+|911    |37 |F  |writer       |53210|
+|1      |24 |M  |technician   |85711|
+|4      |24 |M  |technician   |43537|
+|7      |57 |M  |administrator|91344|
+|8      |36 |M  |administrator|05201|
+|34     |38 |F  |administrator|42141|
+|42     |30 |M  |administrator|17870|
+|44     |26 |M  |technician   |46260|
+|48     |45 |M  |administrator|12550|
+|62     |27 |F  |administrator|97214|
+|72     |48 |F  |administrator|73034|
+|77     |30 |M  |technician   |29379|
+|78     |26 |M  |administrator|61801|
+|79     |39 |F  |administrator|03755|
+|80     |34 |F  |administrator|52241|
+|86     |26 |M  |administrator|46005|
+|87     |47 |M  |administrator|89503|
+|89     |43 |F  |administrator|68106|
+|95     |31 |M  |administrator|10707|
+|118    |21 |M  |administrator|90210|
+|131    |59 |F  |administrator|15237|
+|143    |42 |M  |technician   |08832|
+|151    |38 |F  |administrator|48103|
+|163    |49 |M  |administrator|97212|
+|174    |30 |F  |administrator|52302|
+|180    |22 |F  |administrator|60202|
+|190    |30 |M  |administrator|95938|
+|191    |33 |M  |administrator|95161|
+|194    |38 |M  |administrator|02154|
+|197    |55 |M  |technician   |75094|
+|218    |37 |M  |administrator|06513|
+|225    |51 |F  |administrator|58202|
+|237    |49 |M  |administrator|63146|
+|238    |42 |F  |administrator|44124|
+|244    |28 |M  |technician   |80525|
+|261    |28 |M  |administrator|85202|
+|266    |62 |F  |administrator|78756|
+|277    |35 |F  |administrator|55406|
+|282    |22 |M  |administrator|20057|
+|294    |34 |M  |technician   |92110|
+|296    |43 |F  |administrator|16803|
+|311    |32 |M  |technician   |73071|
+|317    |22 |M  |administrator|13210|
+|325    |48 |M  |technician   |02139|
+|326    |41 |M  |administrator|15235|
+|328    |51 |M  |administrator|06779|
+|383    |42 |M  |administrator|75204|
+|394    |25 |M  |administrator|96819|
+|400    |33 |F  |administrator|78213|
+|409    |48 |M  |administrator|98225|
+|436    |30 |F  |administrator|17345|
+|438    |51 |F  |administrator|43204|
+|439    |23 |F  |administrator|20817|
+|441    |50 |M  |technician   |55013|
+|447    |30 |M  |administrator|55113|
+|452    |35 |M  |administrator|28018|
+|455    |48 |M  |administrator|83709|
+|456    |24 |M  |technician   |31820|
+|458    |47 |M  |technician   |Y1A6B|
+|488    |48 |M  |technician   |21012|
+|494    |38 |F  |administrator|49428|
+|500    |28 |M  |administrator|94305|
+|509    |23 |M  |administrator|10011|
+|513    |43 |M  |administrator|26241|
+|523    |50 |F  |administrator|04102|
+|525    |27 |F  |administrator|19711|
+|529    |47 |F  |administrator|44224|
+|539    |53 |F  |administrator|80303|
+|545    |27 |M  |technician   |08052|
+|562    |54 |F  |administrator|20879|
+|578    |31 |M  |administrator|M7A1A|
+|665    |25 |M  |administrator|55412|
+|666    |44 |M  |administrator|61820|
+|670    |30 |M  |technician   |21114|
+|672    |54 |F  |administrator|90095|
+|688    |37 |F  |administrator|60476|
+|715    |21 |M  |technician   |91206|
+|716    |36 |F  |administrator|44265|
+|717    |24 |M  |technician   |84105|
+|718    |42 |M  |technician   |64118|
+|720    |49 |F  |administrator|16506|
+|726    |25 |F  |administrator|80538|
+|738    |35 |M  |technician   |95403|
+|739    |35 |M  |technician   |73162|
+|748    |28 |M  |administrator|94720|
+|750    |28 |M  |administrator|32303|
+|762    |32 |M  |administrator|95050|
+|768    |29 |M  |administrator|12866|
+|784    |47 |M  |administrator|91040|
+|788    |51 |M  |administrator|05779|
+|790    |27 |M  |technician   |80913|
+|799    |49 |F  |administrator|19716|
+|802    |35 |M  |administrator|34105|
+|803    |70 |M  |administrator|78212|
+|812    |22 |M  |technician   |76234|
+|819    |59 |M  |administrator|40205|
+|832    |24 |M  |technician   |77042|
+|850    |34 |M  |technician   |78390|
+|852    |46 |M  |administrator|94086|
+|857    |35 |F  |administrator|V1G4L|
+|873    |48 |F  |administrator|33763|
+|879    |33 |F  |administrator|55337|
+|889    |24 |M  |technician   |78704|
+|891    |51 |F  |administrator|03062|
+|922    |29 |F  |administrator|21114|
+|938    |38 |F  |technician   |55038|
+|940    |32 |M  |administrator|02215|
+-------------------------------------
+

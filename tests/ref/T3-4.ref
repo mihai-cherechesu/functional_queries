@@ -1,0 +1,15 @@
+---------------------------
+|user_id|sex|occupation   |
+---------------------------
+|1      |M  |technician   |
+|2      |F  |other        |
+|3      |M  |writer       |
+|4      |M  |technician   |
+|5      |F  |other        |
+|6      |M  |executive    |
+|7      |M  |administrator|
+|8      |M  |administrator|
+|9      |M  |student      |
+|10     |M  |lawyer       |
+---------------------------
+
