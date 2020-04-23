@@ -32,13 +32,13 @@ read_table col_sep ln_sep raw_data = format_table (mock_parse col_sep ln_sep raw
 
 -- Now, the first line in the triple nested list is the TableSchema
 format_table :: [[String]] -> Table
-format_table processed_data = Table (head processed_data) (take (length (drop 1 processed_data) - 1) $ tail processed_data)
+format_table processed_data = Table (head processed_data) 
+                                    (take (length (drop 1 processed_data) - 1) $
+                                                     tail processed_data)
 
 user_info_table = (read_table '|' '\n' UserInfo.user_info_str)
 rating_table    = (read_table ' ' '\n' Rating.rating_str)
 movie_table     = (read_table '|' '\n' Movie.movie_str)
-
-
 
 -- TODO 2 ---------------------------------------------------------------------
 -- Note: due to the current implementation, the maximum lengths of the columns
@@ -119,7 +119,8 @@ inspect_diff diff s
 -- Adds the padding to each cell of the table
 -- Includes both TableSchema and Entries
 pad_table :: Table -> [Int] -> Table
-pad_table (Table schema entries) max_lens = Table (zipWith (pad_cell) max_lens schema) (map (zipWith (pad_cell) max_lens) entries)
+pad_table (Table schema entries) max_lens = Table (zipWith (pad_cell) max_lens schema) 
+                                             (map (zipWith (pad_cell) max_lens) entries)
 
 -- Adds the separators to each cell of the table
 -- Includes both TableSchema and Entries
@@ -133,10 +134,17 @@ pad_table (Table schema entries) max_lens = Table (zipWith (pad_cell) max_lens s
 add_seps :: Char -> [String] -> [String]
 add_seps '^' s = foldr (:) [] s
 add_seps '~' s = foldr (:) ["|\n"] s
+add_seps '$' s = foldr ((:) . f) ["|\n"] s
+    where
+        f s
+            | (take 1 s) == "|" = s
+            | otherwise = '|' : s
 add_seps sep s = foldr ((:) . ((:) sep)) ["|\n"] s
 
+
 add_seps_table :: Char -> Table -> Table
-add_seps_table sep (Table schema entries) = Table (add_seps sep schema) (map (add_seps sep) entries)
+add_seps_table sep (Table schema entries) = Table (add_seps sep schema) 
+                                             (map (add_seps sep) entries)
 
 -- Gets the length of a row - all lengths are the sam, hence
 -- it does not matter which one is selected first
@@ -153,7 +161,8 @@ movie     = final_table '|' movie_table
 
 -- Enroll the Table data type in the Show type class
 instance Show Table where
-    show (Table header entries) = (repeat_chr ((row_len entries) - 1) '-') ++ "\n" ++ (foldr (++) [] header) ++ 
+    show (Table header entries) = (repeat_chr ((row_len entries) - 1) '-') ++ "\n" ++
+                                  (foldr (++) [] header) ++ 
                                   (repeat_chr ((row_len entries) - 1) '-') ++ "\n" ++
                                   (foldr (++) [] (map (foldr (++) []) entries)) ++
                                   (repeat_chr ((row_len entries) - 1) '-') ++ "\n"
@@ -252,26 +261,34 @@ eval (Select cols query) = select_columns $ eval query
                             (transp $ map (\x -> head $ (drop (x - 1) (take x (transp entries))))
                                      (map (get_col_no $ (Table schema entries)) cols)))
 
+
 eval (SelectLimit cols x query) = limit_entries $ eval $ Select cols query 
     where
-        limit_entries (Table schema entries) = final_table '^' (Table schema (take x entries))
+        limit_entries (Table schema entries) = final_table '^' 
+                      (Table schema (take x entries))
+
 
 eval (Filter cond query) = apply_filter $ eval query 
     where
-        apply_filter (Table schema entries) = final_table '^' (Table schema (filter (getFilter cond schema) entries))
+        apply_filter (Table schema entries) = final_table '^' 
+                     (Table schema (filter (getFilter cond schema) entries))
+
 
 eval (query1 :|| query2) = join (final_table '^' (eval query1))
                                 (final_table '^' (eval query2)) 
     where
-        join (Table s1 e1) (Table s2 e2) = final_table '^' (Table s1 (e1 ++ e2))
+        join (Table s1 e1) (Table s2 e2) = final_table '^' 
+                           (Table s1 (e1 ++ e2))
 
-eval (Cosine query) = sort_id_num $ eval query
+
+eval (Cosine query) = sort_id_lex $ eval query
     where
-        sort_id_num (Table schema entries) = sort_id_lex $ final_table '|' 
-            (Table cosine_schema (map_cosine (Table schema (sortNumeric entries)) 1 2))
-            where
-                sort_id_lex (Table s e) = (Table s (sortLex e))
-        
+        sort_id_lex (Table schema entries) = final_table '^' $ 
+                                             final_table '$' 
+                    (Table cosine_schema (compute_cos (Table schema (sortLex entries))))
+                    
+                            
+                
 
 -- TODO 5 ---------------------------------------------------------------------
 -- Helper function: returns the mono-entry table with the user with id user_id
@@ -331,28 +348,24 @@ num_movies t = str_to_int $ drop 1 $ head $ tail $ last $ get_entries (sorted_ra
 str_to_double :: String -> Double
 str_to_double s = read s :: Double
 
+str_to_float :: String -> Float
+str_to_float s = read s :: Float
+
 type NestedRArray = Array Integer Double
 type RArray = Array Integer NestedRArray
+----------------
+-- SOLUTION 1 --
+----------------
+-- (Correct results, but running time is fast enough)
 
 -- Stores the ratings for each of the $num_movies$ movies, for each user of the $num_users$ users
--- The total amount of memory would be: 1682 * 943 * 4 bytes -> 6,3 MB -> O(num_users * num_movies) space
--- The vectors will be sparsely populated
+-- The total amount of memory would be: 1682 * 943 * 4 bytes -> 6,3 MB -> 
+-- -> O(num_users * num_movies) space
+
+-- (The vectors will be sparsely populated)
 u t = array (1, num_movies t) [(i, fromIntegral 0) | i <- [1..num_movies t]]
 ratings :: Table -> RArray
 ratings t = array (1, num_users t) [(i, u t) | i <- [1..num_users t]]
-
--- Testing -----------------------------------------------------------
--- Mock arrays for testing
-mock_u = array (1, 5) [(i, fromIntegral 0) | i <- [1..5]]
-mock_ratings :: RArray
-mock_ratings = array (1, 5) [(i, mock_u) | i <- [1..5]]
-
--- Example from homework statement
-mock_u1 = (mock_u // [(1, 3)]) // [(2, 3)]
-mock_u2 = (((mock_u // [(1, 1)]) // [(2, 1)]) // [(3, 2)]) // [(5, 1)]
-mock_u3 = (((mock_u // [(1, 1)]) // [(2, 0)]) // [(3, 0)]) // [(5, 3)]
-mock_ratings1 = ((mock_ratings // [(1, mock_u1)]) // [(2, mock_u2)]) // [(3, mock_u3)] 
-----------------------------------------------------------------------
 
 -- Getters for fields
 get_user_id :: Entry -> Integer
@@ -400,24 +413,30 @@ zipWithA f xs ys = listArray (bounds xs) [f (xs ! i) (ys ! i) | i <- range (boun
 
 -- Cache that stores each norm for all users
 norms_arr :: RArray -> Table -> NestedRArray
-norms_arr ratings_arr t = array (1, num_users t) [(i, norm $ ratings_arr ! i) | i <- (get_bounds ratings_arr)]
+norms_arr ratings_arr t = array (1, num_users t) 
+                          [(i, norm $ ratings_arr ! i) | i <- (get_bounds ratings_arr)]
 
 -- Input: receives 2 indexes for 2 distinct users
 -- Computes the cosine similarity between 2 sim vectors
 compute_cosine :: Integer -> Integer -> RArray -> Table -> String
-compute_cosine ix_xs ix_ys r_arr t = double_to_str $ (dotp (r_arr ! ix_xs) (r_arr ! ix_ys)) /
-                                                     ((norms ! ix_xs) * 
-                                                      (norms ! ix_ys))
-                                                      where
-                                                          norms = norms_arr r_arr t
+compute_cosine ix_xs ix_ys r_arr t = double_to_str ((dotp (r_arr ! ix_xs) 
+                                                          (r_arr ! ix_ys)) /
+                                                    ((norms ! ix_xs) * 
+                                                    (norms ! ix_ys)))
+                                                        where
+                                                            norms = norms_arr r_arr t
 
 -- Compute the cosine similarity between any 2 users and store
 -- them into the entries list
 map_cosine :: Table -> Integer -> Integer -> [Entry]
 map_cosine t i j
     | i == n    = []
-    | j == n    = ((show i) : ((show j) : ((compute_cosine i j r t) : []))) : (map_cosine t (i + 1) (i + 2))
-    | otherwise = ((show i) : ((show j) : ((compute_cosine i j r t) : []))) : (map_cosine t i (j + 1))
+    | j == n    = ((show i) : ((show j) :
+                  ((compute_cosine i j r t) : []))) : 
+                  (map_cosine t (i + 1) (i + 2))
+    | otherwise = ((show i) : ((show j) : 
+                  ((compute_cosine i j r t) : []))) : 
+                  (map_cosine t i (j + 1))
     where 
         n = num_users t
         r = fill_ratings entries ratings_arr t
@@ -426,4 +445,103 @@ map_cosine t i j
                 entries = get_entries t
 
 
-test_table = eval $ Filter (Lt "user_id" 100) $ Atom rating
+----------------
+-- SOLUTION 2 --
+----------------
+
+-- 1) We receive the input table already sorted (lexicographically) -> O(N log N) time, where N
+--    is the number of entries in the input table
+
+-- 2) We build a list of tuples, each tuple with the structure (Integer, [(Integer, Integer)]).
+--    The elements of the tuple represent the user_id and the list of rated movies, respectively.
+--    The latter is a list of tuples (movie_id, rating) -> O(N) time, O(n * max|k|), where
+--    n is the number of users, max|k| is the maximum number of rated movies by a single user
+
+-- 3) We sort each of the n lists, numerically -> O(n * max|k| log max|k|)
+-- 4) We iterate through the list of tuples and compute each pair of lists (preference vectors).
+--    The computation takes -> T = O(2 * t_norm + t_dotprod) = O(max|k|)
+--    Total runtime for iteration -> O(n^2 * max|k|)
+
+-- 5) Total runtime -> O(n^2 * max|k|)
+
+-------------------------------------------------------------------------------
+-- (1)
+type RList = [(String, [(String, Float)])]
+
+-- Helper function:
+-- Used in the sort_inner function -> sorts the inner lists of tuples by the
+-- second element (numerically)
+
+-- Note: we need drop 1 because each field within an entry in the input table
+-- has the column separator '|' appended
+sortTupl :: [(String, Float)] -> [(String, Float)]
+sortTupl = sortBy (compare `on` (str_to_int . drop 1 . fst))
+
+-- Stores the data received from the input table in the RList data structure
+ratings_list :: Table -> RList
+ratings_list (Table s e) = build_ratings_list e
+    where
+        build_ratings_list = foldr cons' []
+            where
+                cons' entry acc
+                    | acc == [] = [(head entry, [(head $ tail entry, str_to_float $ drop 1 $ 
+                                                  head $ tail $ tail entry)])]
+                    | (fst $ head acc) == (head entry) = (head entry, 
+                                                         (head $ tail entry, str_to_float $ drop 1 $
+                                                          head $ tail $ tail entry) : 
+                                                         (snd $ head acc)) : (tail acc)
+                    | otherwise = (head entry, [(head $ tail entry, str_to_float $ drop 1 $ 
+                                                 head $ tail $ tail entry)]) : acc
+
+float_to_str :: Float -> String
+float_to_str x = showFFloat (Just 4) x ""
+
+square_l :: [(String, Float)] -> Float
+square_l = sqrt . sum . map (\(x, y) -> y * y) 
+
+-- Note: the norm for each vector of ratings is trivially calculated, but the dot product
+-- between 2 vectors should be calculated w.r.t. each movie_id, thus the function below
+-- uses the following approach:
+-- -> initially we need to have the inner lists sorted by movie_id (numerically)
+-- -> then we need to find out the intersection of those sorted lists
+-- -> if we have the same movie_id, then we need to compute the product and add it to
+-- the sum
+-- -> if the movie_ids are not the same, we have another 2 cases (1 for lower, 1 for bigger)
+-- -> we always remove the smaller element from the list (the reason is trivial)
+dotp_l' :: [(String, Float)] -> [(String, Float)] -> Float
+dotp_l' [] _ = 0
+dotp_l' _ [] = 0
+dotp_l' (x:xs) (y:ys)
+    | fst x == fst y = ((snd x) * (snd y)) + (dotp_l' xs ys)
+    | (str_to_int $ drop 1 $ fst x) < (str_to_int $ drop 1 $ fst y)  = 0 + (dotp_l' xs (y:ys))
+    | otherwise      = 0 + (dotp_l' (x:xs) ys)
+
+
+-- Computes the similarity between 2 lists
+sim_l l1 l2 = float_to_str ((dotp_l' l1 l2) / ((square_l l1) * (square_l l2)))
+
+sort_inner :: RList -> RList
+sort_inner rl = map (\(x, y) -> (x, sortTupl y)) rl
+
+-- Iterates the list of inner lists (preference vectors):
+-- -> the second parameter is the current tail and it shows us the elements we need to iterate
+-- over with the head of the list (x1, x2), (x1, x3), ..., (x1, xn)
+--                                (x2, x3), (x2, x4), ... and so on
+iter_ratings :: RList -> RList -> [Entry]
+iter_ratings [] _ = []
+iter_ratings (x:[]) curr_tail
+    | curr_tail == [] = []
+    | otherwise = iter_ratings curr_tail (tail curr_tail)
+iter_ratings (x:xs) curr_tail = ([fst x] ++ 
+                                 [fst $ head xs] ++ 
+                                 [(sim_l (snd x) (snd $ head xs))]) : 
+                                 (iter_ratings (x : (tail xs)) curr_tail)
+
+-- Links the functions in a bottom-up manner
+compute_cos :: Table -> [Entry]
+compute_cos (Table s e) = iter_ratings rl (tail rl)
+    where
+        rl = sort_inner $ ratings_list (Table s e) 
+
+
+
